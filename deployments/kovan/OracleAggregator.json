@@ -1,0 +1,463 @@
+{
+  "address": "0xC864bB0627097DE9889eB416090F917b3C2212dB",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPriceOracle",
+          "name": "_oracle1",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IPriceOracle",
+          "name": "_oracle2",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_governor",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "PendingGovernorAccepted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "pendingGovernor",
+          "type": "address"
+        }
+      ],
+      "name": "PendingGovernorSet",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "acceptPendingGovernor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "addSupportForPairIfNeeded",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "canSupportPair",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "governor",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        }
+      ],
+      "name": "isGovernor",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "_isGovernor",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        }
+      ],
+      "name": "isPendingGovernor",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "_isPendingGovernor",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "oracle1",
+      "outputs": [
+        {
+          "internalType": "contract IPriceOracle",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "oracle2",
+      "outputs": [
+        {
+          "internalType": "contract IPriceOracle",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "oracleInUse",
+      "outputs": [
+        {
+          "internalType": "enum IOracleAggregator.OracleInUse",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "overrideDefault",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pendingGovernor",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenIn",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_amountIn",
+          "type": "uint128"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenOut",
+          "type": "address"
+        }
+      ],
+      "name": "quote",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "reconfigureSupportForPair",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "__pendingGovernor",
+          "type": "address"
+        }
+      ],
+      "name": "setPendingGovernor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xc480847f857e6e7bfb8a10b48e0c8c0b62e92d9721e6035551f811d2b8f2db53",
+  "receipt": {
+    "to": null,
+    "from": "0xa71405F7D11734F03F2616b93EAEd22604C978Bf",
+    "contractAddress": "0xC864bB0627097DE9889eB416090F917b3C2212dB",
+    "transactionIndex": 5,
+    "gasUsed": "796007",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xa5df95f848cba5df3c273e9a982f6ee9422a643b7fe17b08e9f70f99ce643131",
+    "transactionHash": "0xc480847f857e6e7bfb8a10b48e0c8c0b62e92d9721e6035551f811d2b8f2db53",
+    "logs": [],
+    "blockNumber": 28539078,
+    "cumulativeGasUsed": "1359786",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x9bB0Fa1A797d76eBDe80981CD0f0079bCc2c7a43",
+    "0xf5d653562BC66c85fBdCd1a2241C734E0AA2a001",
+    "0xeeAE844d04ee45c37636D8Db8C9482200177DC93"
+  ],
+  "solcInputHash": "030ff5f55825c83afc9b0eab09fca7f7",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IPriceOracle\",\"name\":\"_oracle1\",\"type\":\"address\"},{\"internalType\":\"contract IPriceOracle\",\"name\":\"_oracle2\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_governor\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"PendingGovernorAccepted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"pendingGovernor\",\"type\":\"address\"}],\"name\":\"PendingGovernorSet\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"acceptPendingGovernor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_tokenB\",\"type\":\"address\"}],\"name\":\"addSupportForPairIfNeeded\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_tokenB\",\"type\":\"address\"}],\"name\":\"canSupportPair\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"governor\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"}],\"name\":\"isGovernor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"_isGovernor\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"}],\"name\":\"isPendingGovernor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"_isPendingGovernor\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"oracle1\",\"outputs\":[{\"internalType\":\"contract IPriceOracle\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"oracle2\",\"outputs\":[{\"internalType\":\"contract IPriceOracle\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"oracleInUse\",\"outputs\":[{\"internalType\":\"enum IOracleAggregator.OracleInUse\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_tokenB\",\"type\":\"address\"}],\"name\":\"overrideDefault\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pendingGovernor\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenIn\",\"type\":\"address\"},{\"internalType\":\"uint128\",\"name\":\"_amountIn\",\"type\":\"uint128\"},{\"internalType\":\"address\",\"name\":\"_tokenOut\",\"type\":\"address\"}],\"name\":\"quote\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"_amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_tokenB\",\"type\":\"address\"}],\"name\":\"reconfigureSupportForPair\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"__pendingGovernor\",\"type\":\"address\"}],\"name\":\"setPendingGovernor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"addSupportForPairIfNeeded(address,address)\":{\"details\":\"Will revert if pair cannot be supported. _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\",\"params\":{\"_tokenA\":\"One of the pair's tokens\",\"_tokenB\":\"The other of the pair's tokens\"}},\"canSupportPair(address,address)\":{\"details\":\"_tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\",\"params\":{\"_tokenA\":\"One of the pair's tokens\",\"_tokenB\":\"The other of the pair's tokens\"},\"returns\":{\"_0\":\"Whether the given pair of tokens can be supported by the oracle\"}},\"overrideDefault(address,address)\":{\"details\":\"_tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\",\"params\":{\"_tokenA\":\"One of the pair's tokens\",\"_tokenB\":\"The other of the pair's tokens\"}},\"quote(address,uint128,address)\":{\"params\":{\"_amountIn\":\"The amount that will be provided\",\"_tokenIn\":\"The token that will be provided\",\"_tokenOut\":\"The token we would like to quote\"},\"returns\":{\"_amountOut\":\"How much _tokenOut will be returned in exchange for _amountIn amount of _tokenIn\"}},\"reconfigureSupportForPair(address,address)\":{\"details\":\"Will revert if pair cannot be supported. _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\",\"params\":{\"_tokenA\":\"One of the pair's tokens\",\"_tokenB\":\"The other of the pair's tokens\"}}},\"stateVariables\":{\"oracle1\":{\"return\":\"The first oracle\",\"returns\":{\"_0\":\"The first oracle\"}},\"oracle2\":{\"return\":\"The second oracle\",\"returns\":{\"_0\":\"The second oracle\"}},\"oracleInUse\":{\"details\":\"It is expected that _tokenA < _tokenB\",\"return\":\"The oracle that is being used for the given pair\",\"returns\":{\"_0\":\"The oracle that is being used for the given pair\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"addSupportForPairIfNeeded(address,address)\":{\"notice\":\"Adds support for a given pair if the oracle didn't support it already. If called for a pair that is already supported, then nothing will happen. This function will let the oracle take some actions to configure the pair, in preparation for future quotes.\"},\"canSupportPair(address,address)\":{\"notice\":\"Returns whether this oracle can support this pair of tokens\"},\"oracle1()\":{\"notice\":\"Returns the first oracle of the two being aggregated\"},\"oracle2()\":{\"notice\":\"Returns the second oracle of the two being aggregated\"},\"oracleInUse(address,address)\":{\"notice\":\"Returns the oracle that is being used for the given pair\"},\"overrideDefault(address,address)\":{\"notice\":\"Overrides the default and sets oracle2 as the oracle for the pair (while also configuring it for use)\"},\"quote(address,uint128,address)\":{\"notice\":\"Returns a quote, based on the given tokens and amount\"},\"reconfigureSupportForPair(address,address)\":{\"notice\":\"Reconfigures support for a given pair. This function will let the oracle take some actions to configure the pair, in preparation for future quotes. Can be called many times in order to let the oracle re-configure for a new context.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/oracles/OracleAggregator.sol\":\"OracleAggregator\"},\"evmVersion\":\"london\",\"libraries\":{\":__CACHE_BREAKER__\":\"0x00000000d41867734bbee4c6863d9255b2b06ac1\"},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/oracles/IOracleAggregator.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.5.0;\\n\\nimport './IPriceOracle.sol';\\n\\n/// @title An implementation of IPriceOracle that aggregates two other oracles\\n/// @notice This oracle will use two other oracles to support price quotes\\ninterface IOracleAggregator is IPriceOracle {\\n  /// @notice The oracle that is currently in use by a specific pair\\n  enum OracleInUse {\\n    // No oracle is being used right now for the pair\\n    NONE,\\n    // Oracle 1 is being used for the pair\\n    ORACLE_1,\\n    // Oracle 2 is being used for the pair\\n    ORACLE_2\\n  }\\n\\n  /// @notice Returns the first oracle of the two being aggregated\\n  /// @return The first oracle\\n  function oracle1() external view returns (IPriceOracle);\\n\\n  /// @notice Returns the second oracle of the two being aggregated\\n  /// @return The second oracle\\n  function oracle2() external view returns (IPriceOracle);\\n\\n  /// @notice Returns the oracle that is being used for the given pair\\n  /// @dev It is expected that _tokenA < _tokenB\\n  /// @return The oracle that is being used for the given pair\\n  function oracleInUse(address _tokenA, address _tokenB) external view returns (OracleInUse);\\n\\n  /// @notice Overrides the default and sets oracle2 as the oracle for the pair (while also configuring it for use)\\n  /// @dev _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\\n  /// @param _tokenA One of the pair's tokens\\n  /// @param _tokenB The other of the pair's tokens\\n  function overrideDefault(address _tokenA, address _tokenB) external;\\n}\\n\",\"keccak256\":\"0x704e1f20e17b39385b007dbde3a2b994d5267c7c16cef84fa2ffb2f00096684c\",\"license\":\"GPL-2.0-or-later\"},\"contracts/interfaces/oracles/IPriceOracle.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.5.0;\\n\\n/// @title The interface for an oracle that provides price quotes\\n/// @notice These methods allow users to add support for pairs, and then ask for quotes\\ninterface IPriceOracle {\\n  /// @notice Returns whether this oracle can support this pair of tokens\\n  /// @dev _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\\n  /// @param _tokenA One of the pair's tokens\\n  /// @param _tokenB The other of the pair's tokens\\n  /// @return Whether the given pair of tokens can be supported by the oracle\\n  function canSupportPair(address _tokenA, address _tokenB) external view returns (bool);\\n\\n  /// @notice Returns a quote, based on the given tokens and amount\\n  /// @param _tokenIn The token that will be provided\\n  /// @param _amountIn The amount that will be provided\\n  /// @param _tokenOut The token we would like to quote\\n  /// @return _amountOut How much _tokenOut will be returned in exchange for _amountIn amount of _tokenIn\\n  function quote(\\n    address _tokenIn,\\n    uint128 _amountIn,\\n    address _tokenOut\\n  ) external view returns (uint256 _amountOut);\\n\\n  /// @notice Reconfigures support for a given pair. This function will let the oracle take some actions to configure the pair, in\\n  /// preparation for future quotes. Can be called many times in order to let the oracle re-configure for a new context.\\n  /// @dev Will revert if pair cannot be supported. _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\\n  /// @param _tokenA One of the pair's tokens\\n  /// @param _tokenB The other of the pair's tokens\\n  function reconfigureSupportForPair(address _tokenA, address _tokenB) external;\\n\\n  /// @notice Adds support for a given pair if the oracle didn't support it already. If called for a pair that is already supported,\\n  /// then nothing will happen. This function will let the oracle take some actions to configure the pair, in preparation for future quotes.\\n  /// @dev Will revert if pair cannot be supported. _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order\\n  /// @param _tokenA One of the pair's tokens\\n  /// @param _tokenB The other of the pair's tokens\\n  function addSupportForPairIfNeeded(address _tokenA, address _tokenB) external;\\n}\\n\",\"keccak256\":\"0xf1ebb97588db58c0e2112550f81a25b19ee185be3fd3a2375b5394674bd22606\",\"license\":\"GPL-2.0-or-later\"},\"contracts/libraries/TokenSorting.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >0.6;\\n\\n/// @title TokenSorting library\\n/// @notice Provides functions to sort tokens easily\\nlibrary TokenSorting {\\n  /// @notice Takes two tokens, and returns them sorted\\n  /// @param _tokenA One of the tokens\\n  /// @param _tokenB The other token\\n  /// @return __tokenA The first of the tokens\\n  /// @return __tokenB The second of the tokens\\n  function sortTokens(address _tokenA, address _tokenB) internal pure returns (address __tokenA, address __tokenB) {\\n    (__tokenA, __tokenB) = _tokenA < _tokenB ? (_tokenA, _tokenB) : (_tokenB, _tokenA);\\n  }\\n}\\n\",\"keccak256\":\"0xe087aec6da5b5ccf145a432a5155e338cd847910599562909d04b0116a233473\",\"license\":\"GPL-2.0-or-later\"},\"contracts/oracles/OracleAggregator.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\npragma solidity >=0.8.7 <0.9.0;\\n\\nimport '../interfaces/oracles/IOracleAggregator.sol';\\nimport '../libraries/TokenSorting.sol';\\nimport '../utils/Governable.sol';\\n\\ncontract OracleAggregator is Governable, IOracleAggregator {\\n  // Note: by default oracle 1 will take precendence over oracle 2\\n  /// @inheritdoc IOracleAggregator\\n  IPriceOracle public immutable oracle1;\\n  /// @inheritdoc IOracleAggregator\\n  IPriceOracle public immutable oracle2;\\n  /// @inheritdoc IOracleAggregator\\n  mapping(address => mapping(address => OracleInUse)) public oracleInUse;\\n\\n  constructor(\\n    IPriceOracle _oracle1,\\n    IPriceOracle _oracle2,\\n    address _governor\\n  ) Governable(_governor) {\\n    require(address(_oracle1) != address(0) && address(_oracle2) != address(0), 'ZeroAddress');\\n    oracle1 = _oracle1;\\n    oracle2 = _oracle2;\\n  }\\n\\n  /// @inheritdoc IPriceOracle\\n  function canSupportPair(address _tokenA, address _tokenB) external view returns (bool) {\\n    return oracle1.canSupportPair(_tokenA, _tokenB) || oracle2.canSupportPair(_tokenA, _tokenB);\\n  }\\n\\n  /// @inheritdoc IPriceOracle\\n  function quote(\\n    address _tokenIn,\\n    uint128 _amountIn,\\n    address _tokenOut\\n  ) external view returns (uint256 _amountOut) {\\n    (address _tokenA, address _tokenB) = TokenSorting.sortTokens(_tokenIn, _tokenOut);\\n    OracleInUse _inUse = oracleInUse[_tokenA][_tokenB];\\n    require(_inUse != OracleInUse.NONE, 'PairNotSupported');\\n    if (_inUse == OracleInUse.ORACLE_1) {\\n      return oracle1.quote(_tokenIn, _amountIn, _tokenOut);\\n    } else {\\n      return oracle2.quote(_tokenIn, _amountIn, _tokenOut);\\n    }\\n  }\\n\\n  /// @inheritdoc IPriceOracle\\n  function reconfigureSupportForPair(address _tokenA, address _tokenB) external {\\n    (address __tokenA, address __tokenB) = TokenSorting.sortTokens(_tokenA, _tokenB);\\n    _addSupportForPair(__tokenA, __tokenB);\\n  }\\n\\n  /// @inheritdoc IPriceOracle\\n  function addSupportForPairIfNeeded(address _tokenA, address _tokenB) external {\\n    (address __tokenA, address __tokenB) = TokenSorting.sortTokens(_tokenA, _tokenB);\\n    if (oracleInUse[__tokenA][__tokenB] == OracleInUse.NONE) {\\n      _addSupportForPair(__tokenA, __tokenB);\\n    }\\n  }\\n\\n  /// @inheritdoc IOracleAggregator\\n  function overrideDefault(address _tokenA, address _tokenB) external onlyGovernor {\\n    oracle2.reconfigureSupportForPair(_tokenA, _tokenB);\\n    (address __tokenA, address __tokenB) = TokenSorting.sortTokens(_tokenA, _tokenB);\\n    oracleInUse[__tokenA][__tokenB] = OracleInUse.ORACLE_2;\\n  }\\n\\n  function _addSupportForPair(address _tokenA, address _tokenB) internal virtual {\\n    if (oracle1.canSupportPair(_tokenA, _tokenB)) {\\n      oracle1.reconfigureSupportForPair(_tokenA, _tokenB);\\n      oracleInUse[_tokenA][_tokenB] = OracleInUse.ORACLE_1;\\n    } else {\\n      oracle2.reconfigureSupportForPair(_tokenA, _tokenB);\\n      oracleInUse[_tokenA][_tokenB] = OracleInUse.ORACLE_2;\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0x6bd8a69d72ac3cffc7fc4ba3a52fae643e4b1e64b9a877f8b4f169da766e816f\",\"license\":\"BUSL-1.1\"},\"contracts/utils/Governable.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\n\\npragma solidity >=0.7.0;\\n\\ninterface IGovernable {\\n  event PendingGovernorSet(address pendingGovernor);\\n  event PendingGovernorAccepted();\\n\\n  function setPendingGovernor(address _pendingGovernor) external;\\n\\n  function acceptPendingGovernor() external;\\n\\n  function governor() external view returns (address);\\n\\n  function pendingGovernor() external view returns (address);\\n\\n  function isGovernor(address _account) external view returns (bool _isGovernor);\\n\\n  function isPendingGovernor(address _account) external view returns (bool _isPendingGovernor);\\n}\\n\\nabstract contract Governable is IGovernable {\\n  address private _governor;\\n  address private _pendingGovernor;\\n\\n  constructor(address __governor) {\\n    require(__governor != address(0), 'Governable: zero address');\\n    _governor = __governor;\\n  }\\n\\n  function governor() external view override returns (address) {\\n    return _governor;\\n  }\\n\\n  function pendingGovernor() external view override returns (address) {\\n    return _pendingGovernor;\\n  }\\n\\n  function setPendingGovernor(address __pendingGovernor) external virtual override onlyGovernor {\\n    _setPendingGovernor(__pendingGovernor);\\n  }\\n\\n  function _setPendingGovernor(address __pendingGovernor) internal {\\n    require(__pendingGovernor != address(0), 'Governable: zero address');\\n    _pendingGovernor = __pendingGovernor;\\n    emit PendingGovernorSet(__pendingGovernor);\\n  }\\n\\n  function acceptPendingGovernor() external virtual override onlyPendingGovernor {\\n    _acceptPendingGovernor();\\n  }\\n\\n  function _acceptPendingGovernor() internal {\\n    require(_pendingGovernor != address(0), 'Governable: no pending governor');\\n    _governor = _pendingGovernor;\\n    _pendingGovernor = address(0);\\n    emit PendingGovernorAccepted();\\n  }\\n\\n  function isGovernor(address _account) public view override returns (bool _isGovernor) {\\n    return _account == _governor;\\n  }\\n\\n  function isPendingGovernor(address _account) public view override returns (bool _isPendingGovernor) {\\n    return _account == _pendingGovernor;\\n  }\\n\\n  modifier onlyGovernor() {\\n    require(isGovernor(msg.sender), 'Governable: only governor');\\n    _;\\n  }\\n\\n  modifier onlyPendingGovernor() {\\n    require(isPendingGovernor(msg.sender), 'Governable: only pending governor');\\n    _;\\n  }\\n}\\n\",\"keccak256\":\"0x3e174ea3fad0b05bfa210572348adbb36d10da19fb95765a42bbfc274c6eb9da\",\"license\":\"BUSL-1.1\"}},\"version\":1}",
+  "bytecode": "0x60c060405234801561001057600080fd5b50604051610ec6380380610ec683398101604081905261002f91610129565b806001600160a01b03811661008b5760405162461bcd60e51b815260206004820152601860248201527f476f7665726e61626c653a207a65726f2061646472657373000000000000000060448201526064015b60405180910390fd5b600080546001600160a01b0319166001600160a01b039283161790558316158015906100bf57506001600160a01b03821615155b6100f95760405162461bcd60e51b815260206004820152600b60248201526a5a65726f4164647265737360a81b6044820152606401610082565b506001600160a01b039182166080521660a052610176565b6001600160a01b038116811461012657600080fd5b50565b60008060006060848603121561013e57600080fd5b835161014981610111565b602085015190935061015a81610111565b604085015190925061016b81610111565b809150509250925092565b60805160a051610cf36101d3600039600081816101e6015281816103810152818161050a0152818161076d0152610a4c01526000818161017101528181610470015281816106c1015281816108fe01526109950152610cf36000f3fe608060405234801561001057600080fd5b50600436106100ea5760003560e01c80637f55db3a1161008c578063df08aed511610066578063df08aed514610229578063e3056a341461024b578063e43581b81461025c578063f235757f1461027e57600080fd5b80637f55db3a146101ce578063996f7d3a146101e1578063a513355f1461020857600080fd5b806372c12c87116100c857806372c12c8714610136578063734273fd14610149578063747a0c3a1461016c5780637aa3d48d1461019357600080fd5b80630c340a24146100ef57806313f6986d14610119578063678b733514610123575b600080fd5b6000546001600160a01b03165b6040516001600160a01b0390911681526020015b60405180910390f35b610121610291565b005b610121610131366004610ba5565b610304565b610121610144366004610ba5565b610425565b61015c610157366004610ba5565b610446565b6040519015158152602001610110565b6100fc7f000000000000000000000000000000000000000000000000000000000000000081565b6101c16101a1366004610ba5565b600260209081526000928352604080842090915290825290205460ff1681565b6040516101109190610bee565b6101216101dc366004610ba5565b61057c565b6100fc7f000000000000000000000000000000000000000000000000000000000000000081565b61021b610216366004610c16565b6105db565b604051908152602001610110565b61015c610237366004610c67565b6001546001600160a01b0391821691161490565b6001546001600160a01b03166100fc565b61015c61026a366004610c67565b6000546001600160a01b0391821691161490565b61012161028c366004610c67565b61079c565b6001546001600160a01b031633146102fa5760405162461bcd60e51b815260206004820152602160248201527f476f7665726e61626c653a206f6e6c792070656e64696e6720676f7665726e6f6044820152603960f91b60648201526084015b60405180910390fd5b6103026107fe565b565b6000546001600160a01b0316331461035a5760405162461bcd60e51b815260206004820152601960248201527823b7bb32b93730b136329d1037b7363c9033b7bb32b93737b960391b60448201526064016102f1565b6040516372c12c8760e01b81526001600160a01b03838116600483015282811660248301527f000000000000000000000000000000000000000000000000000000000000000016906372c12c8790604401600060405180830381600087803b1580156103c557600080fd5b505af11580156103d9573d6000803e3d6000fd5b505050506000806103ea84846108a6565b6001600160a01b0391821660009081526002602081815260408084209490951683529290925291909120805460ff1916909117905550505050565b60008061043284846108a6565b9150915061044082826108d7565b50505050565b60405163734273fd60e01b81526001600160a01b03838116600483015282811660248301526000917f00000000000000000000000000000000000000000000000000000000000000009091169063734273fd90604401602060405180830381865afa1580156104b9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104dd9190610c82565b80610575575060405163734273fd60e01b81526001600160a01b03848116600483015283811660248301527f0000000000000000000000000000000000000000000000000000000000000000169063734273fd90604401602060405180830381865afa158015610551573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105759190610c82565b9392505050565b60008061058984846108a6565b909250905060006001600160a01b03808416600090815260026020818152604080842094871684529390529190205460ff16908111156105cb576105cb610bd8565b14156104405761044082826108d7565b60008060006105ea86856108a6565b6001600160a01b03808316600090815260026020908152604080832093851683529290529081205492945090925060ff9091169081600281111561063057610630610bd8565b14156106715760405162461bcd60e51b815260206004820152601060248201526f14185a5c939bdd14dd5c1c1bdc9d195960821b60448201526064016102f1565b600181600281111561068557610685610bd8565b14156107375760405163a513355f60e01b81526001600160a01b0388811660048301526001600160801b038816602483015286811660448301527f0000000000000000000000000000000000000000000000000000000000000000169063a513355f906064015b602060405180830381865afa158015610709573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061072d9190610ca4565b9350505050610575565b60405163a513355f60e01b81526001600160a01b0388811660048301526001600160801b038816602483015286811660448301527f0000000000000000000000000000000000000000000000000000000000000000169063a513355f906064016106ec565b6000546001600160a01b031633146107f25760405162461bcd60e51b815260206004820152601960248201527823b7bb32b93730b136329d1037b7363c9033b7bb32b93737b960391b60448201526064016102f1565b6107fb81610adf565b50565b6001546001600160a01b03166108565760405162461bcd60e51b815260206004820152601f60248201527f476f7665726e61626c653a206e6f2070656e64696e6720676f7665726e6f720060448201526064016102f1565b60018054600080546001600160a01b03199081166001600160a01b0384161782559091169091556040517fdc57ca23c46d823853915ed5a090ca0ee9db5eb6a46f5c58e1c9158de861fd769190a1565b600080826001600160a01b0316846001600160a01b0316106108c95782846108cc565b83835b909590945092505050565b60405163734273fd60e01b81526001600160a01b03838116600483015282811660248301527f0000000000000000000000000000000000000000000000000000000000000000169063734273fd90604401602060405180830381865afa158015610945573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109699190610c82565b15610a25576040516372c12c8760e01b81526001600160a01b03838116600483015282811660248301527f000000000000000000000000000000000000000000000000000000000000000016906372c12c8790604401600060405180830381600087803b1580156109d957600080fd5b505af11580156109ed573d6000803e3d6000fd5b505050506001600160a01b0391821660009081526002602090815260408083209390941682529190915220805460ff19166001179055565b6040516372c12c8760e01b81526001600160a01b03838116600483015282811660248301527f000000000000000000000000000000000000000000000000000000000000000016906372c12c8790604401600060405180830381600087803b158015610a9057600080fd5b505af1158015610aa4573d6000803e3d6000fd5b505050506001600160a01b0391821660009081526002602081815260408084209490951683529290925291909120805460ff19169091179055565b6001600160a01b038116610b355760405162461bcd60e51b815260206004820152601860248201527f476f7665726e61626c653a207a65726f2061646472657373000000000000000060448201526064016102f1565b600180546001600160a01b0319166001600160a01b0383169081179091556040519081527f56bddfa0cee9697cebddf9acd7f23dc6583663b05e007b877056d05017994def9060200160405180910390a150565b80356001600160a01b0381168114610ba057600080fd5b919050565b60008060408385031215610bb857600080fd5b610bc183610b89565b9150610bcf60208401610b89565b90509250929050565b634e487b7160e01b600052602160045260246000fd5b6020810160038310610c1057634e487b7160e01b600052602160045260246000fd5b91905290565b600080600060608486031215610c2b57600080fd5b610c3484610b89565b925060208401356001600160801b0381168114610c5057600080fd5b9150610c5e60408501610b89565b90509250925092565b600060208284031215610c7957600080fd5b61057582610b89565b600060208284031215610c9457600080fd5b8151801515811461057557600080fd5b600060208284031215610cb657600080fd5b505191905056fea2646970667358221220dbe6966d6ddf6b567ed03616a6d27c33ba6584c9e182879a8120e979c93db80c64736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100ea5760003560e01c80637f55db3a1161008c578063df08aed511610066578063df08aed514610229578063e3056a341461024b578063e43581b81461025c578063f235757f1461027e57600080fd5b80637f55db3a146101ce578063996f7d3a146101e1578063a513355f1461020857600080fd5b806372c12c87116100c857806372c12c8714610136578063734273fd14610149578063747a0c3a1461016c5780637aa3d48d1461019357600080fd5b80630c340a24146100ef57806313f6986d14610119578063678b733514610123575b600080fd5b6000546001600160a01b03165b6040516001600160a01b0390911681526020015b60405180910390f35b610121610291565b005b610121610131366004610ba5565b610304565b610121610144366004610ba5565b610425565b61015c610157366004610ba5565b610446565b6040519015158152602001610110565b6100fc7f000000000000000000000000000000000000000000000000000000000000000081565b6101c16101a1366004610ba5565b600260209081526000928352604080842090915290825290205460ff1681565b6040516101109190610bee565b6101216101dc366004610ba5565b61057c565b6100fc7f000000000000000000000000000000000000000000000000000000000000000081565b61021b610216366004610c16565b6105db565b604051908152602001610110565b61015c610237366004610c67565b6001546001600160a01b0391821691161490565b6001546001600160a01b03166100fc565b61015c61026a366004610c67565b6000546001600160a01b0391821691161490565b61012161028c366004610c67565b61079c565b6001546001600160a01b031633146102fa5760405162461bcd60e51b815260206004820152602160248201527f476f7665726e61626c653a206f6e6c792070656e64696e6720676f7665726e6f6044820152603960f91b60648201526084015b60405180910390fd5b6103026107fe565b565b6000546001600160a01b0316331461035a5760405162461bcd60e51b815260206004820152601960248201527823b7bb32b93730b136329d1037b7363c9033b7bb32b93737b960391b60448201526064016102f1565b6040516372c12c8760e01b81526001600160a01b03838116600483015282811660248301527f000000000000000000000000000000000000000000000000000000000000000016906372c12c8790604401600060405180830381600087803b1580156103c557600080fd5b505af11580156103d9573d6000803e3d6000fd5b505050506000806103ea84846108a6565b6001600160a01b0391821660009081526002602081815260408084209490951683529290925291909120805460ff1916909117905550505050565b60008061043284846108a6565b9150915061044082826108d7565b50505050565b60405163734273fd60e01b81526001600160a01b03838116600483015282811660248301526000917f00000000000000000000000000000000000000000000000000000000000000009091169063734273fd90604401602060405180830381865afa1580156104b9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104dd9190610c82565b80610575575060405163734273fd60e01b81526001600160a01b03848116600483015283811660248301527f0000000000000000000000000000000000000000000000000000000000000000169063734273fd90604401602060405180830381865afa158015610551573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105759190610c82565b9392505050565b60008061058984846108a6565b909250905060006001600160a01b03808416600090815260026020818152604080842094871684529390529190205460ff16908111156105cb576105cb610bd8565b14156104405761044082826108d7565b60008060006105ea86856108a6565b6001600160a01b03808316600090815260026020908152604080832093851683529290529081205492945090925060ff9091169081600281111561063057610630610bd8565b14156106715760405162461bcd60e51b815260206004820152601060248201526f14185a5c939bdd14dd5c1c1bdc9d195960821b60448201526064016102f1565b600181600281111561068557610685610bd8565b14156107375760405163a513355f60e01b81526001600160a01b0388811660048301526001600160801b038816602483015286811660448301527f0000000000000000000000000000000000000000000000000000000000000000169063a513355f906064015b602060405180830381865afa158015610709573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061072d9190610ca4565b9350505050610575565b60405163a513355f60e01b81526001600160a01b0388811660048301526001600160801b038816602483015286811660448301527f0000000000000000000000000000000000000000000000000000000000000000169063a513355f906064016106ec565b6000546001600160a01b031633146107f25760405162461bcd60e51b815260206004820152601960248201527823b7bb32b93730b136329d1037b7363c9033b7bb32b93737b960391b60448201526064016102f1565b6107fb81610adf565b50565b6001546001600160a01b03166108565760405162461bcd60e51b815260206004820152601f60248201527f476f7665726e61626c653a206e6f2070656e64696e6720676f7665726e6f720060448201526064016102f1565b60018054600080546001600160a01b03199081166001600160a01b0384161782559091169091556040517fdc57ca23c46d823853915ed5a090ca0ee9db5eb6a46f5c58e1c9158de861fd769190a1565b600080826001600160a01b0316846001600160a01b0316106108c95782846108cc565b83835b909590945092505050565b60405163734273fd60e01b81526001600160a01b03838116600483015282811660248301527f0000000000000000000000000000000000000000000000000000000000000000169063734273fd90604401602060405180830381865afa158015610945573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109699190610c82565b15610a25576040516372c12c8760e01b81526001600160a01b03838116600483015282811660248301527f000000000000000000000000000000000000000000000000000000000000000016906372c12c8790604401600060405180830381600087803b1580156109d957600080fd5b505af11580156109ed573d6000803e3d6000fd5b505050506001600160a01b0391821660009081526002602090815260408083209390941682529190915220805460ff19166001179055565b6040516372c12c8760e01b81526001600160a01b03838116600483015282811660248301527f000000000000000000000000000000000000000000000000000000000000000016906372c12c8790604401600060405180830381600087803b158015610a9057600080fd5b505af1158015610aa4573d6000803e3d6000fd5b505050506001600160a01b0391821660009081526002602081815260408084209490951683529290925291909120805460ff19169091179055565b6001600160a01b038116610b355760405162461bcd60e51b815260206004820152601860248201527f476f7665726e61626c653a207a65726f2061646472657373000000000000000060448201526064016102f1565b600180546001600160a01b0319166001600160a01b0383169081179091556040519081527f56bddfa0cee9697cebddf9acd7f23dc6583663b05e007b877056d05017994def9060200160405180910390a150565b80356001600160a01b0381168114610ba057600080fd5b919050565b60008060408385031215610bb857600080fd5b610bc183610b89565b9150610bcf60208401610b89565b90509250929050565b634e487b7160e01b600052602160045260246000fd5b6020810160038310610c1057634e487b7160e01b600052602160045260246000fd5b91905290565b600080600060608486031215610c2b57600080fd5b610c3484610b89565b925060208401356001600160801b0381168114610c5057600080fd5b9150610c5e60408501610b89565b90509250925092565b600060208284031215610c7957600080fd5b61057582610b89565b600060208284031215610c9457600080fd5b8151801515811461057557600080fd5b600060208284031215610cb657600080fd5b505191905056fea2646970667358221220dbe6966d6ddf6b567ed03616a6d27c33ba6584c9e182879a8120e979c93db80c64736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "addSupportForPairIfNeeded(address,address)": {
+        "details": "Will revert if pair cannot be supported. _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order",
+        "params": {
+          "_tokenA": "One of the pair's tokens",
+          "_tokenB": "The other of the pair's tokens"
+        }
+      },
+      "canSupportPair(address,address)": {
+        "details": "_tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order",
+        "params": {
+          "_tokenA": "One of the pair's tokens",
+          "_tokenB": "The other of the pair's tokens"
+        },
+        "returns": {
+          "_0": "Whether the given pair of tokens can be supported by the oracle"
+        }
+      },
+      "overrideDefault(address,address)": {
+        "details": "_tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order",
+        "params": {
+          "_tokenA": "One of the pair's tokens",
+          "_tokenB": "The other of the pair's tokens"
+        }
+      },
+      "quote(address,uint128,address)": {
+        "params": {
+          "_amountIn": "The amount that will be provided",
+          "_tokenIn": "The token that will be provided",
+          "_tokenOut": "The token we would like to quote"
+        },
+        "returns": {
+          "_amountOut": "How much _tokenOut will be returned in exchange for _amountIn amount of _tokenIn"
+        }
+      },
+      "reconfigureSupportForPair(address,address)": {
+        "details": "Will revert if pair cannot be supported. _tokenA and _tokenB may be passed in either tokenA/tokenB or tokenB/tokenA order",
+        "params": {
+          "_tokenA": "One of the pair's tokens",
+          "_tokenB": "The other of the pair's tokens"
+        }
+      }
+    },
+    "stateVariables": {
+      "oracle1": {
+        "return": "The first oracle",
+        "returns": {
+          "_0": "The first oracle"
+        }
+      },
+      "oracle2": {
+        "return": "The second oracle",
+        "returns": {
+          "_0": "The second oracle"
+        }
+      },
+      "oracleInUse": {
+        "details": "It is expected that _tokenA < _tokenB",
+        "return": "The oracle that is being used for the given pair",
+        "returns": {
+          "_0": "The oracle that is being used for the given pair"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "addSupportForPairIfNeeded(address,address)": {
+        "notice": "Adds support for a given pair if the oracle didn't support it already. If called for a pair that is already supported, then nothing will happen. This function will let the oracle take some actions to configure the pair, in preparation for future quotes."
+      },
+      "canSupportPair(address,address)": {
+        "notice": "Returns whether this oracle can support this pair of tokens"
+      },
+      "oracle1()": {
+        "notice": "Returns the first oracle of the two being aggregated"
+      },
+      "oracle2()": {
+        "notice": "Returns the second oracle of the two being aggregated"
+      },
+      "oracleInUse(address,address)": {
+        "notice": "Returns the oracle that is being used for the given pair"
+      },
+      "overrideDefault(address,address)": {
+        "notice": "Overrides the default and sets oracle2 as the oracle for the pair (while also configuring it for use)"
+      },
+      "quote(address,uint128,address)": {
+        "notice": "Returns a quote, based on the given tokens and amount"
+      },
+      "reconfigureSupportForPair(address,address)": {
+        "notice": "Reconfigures support for a given pair. This function will let the oracle take some actions to configure the pair, in preparation for future quotes. Can be called many times in order to let the oracle re-configure for a new context."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 15934,
+        "contract": "contracts/oracles/OracleAggregator.sol:OracleAggregator",
+        "label": "_governor",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 15936,
+        "contract": "contracts/oracles/OracleAggregator.sol:OracleAggregator",
+        "label": "_pendingGovernor",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 15615,
+        "contract": "contracts/oracles/OracleAggregator.sol:OracleAggregator",
+        "label": "oracleInUse",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_enum(OracleInUse)10530))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_enum(OracleInUse)10530": {
+        "encoding": "inplace",
+        "label": "enum IOracleAggregator.OracleInUse",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_enum(OracleInUse)10530)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => enum IOracleAggregator.OracleInUse)",
+        "numberOfBytes": "32",
+        "value": "t_enum(OracleInUse)10530"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_enum(OracleInUse)10530))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => enum IOracleAggregator.OracleInUse))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_enum(OracleInUse)10530)"
+      }
+    }
+  }
+}
