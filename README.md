@@ -1,8 +1,8 @@
 # DCA V2
 
-[![Lint](https://github.com/Mean-Finance/dca-v2-core/actions/workflows/lint.yml/badge.svg)](https://github.com/Mean-Finance/dca-v2-core/actions/workflows/lint.yml)
-[![Tests (unit, integration, e2e)](https://github.com/Mean-Finance/dca-v2-core/actions/workflows/tests.yml/badge.svg)](https://github.com/Mean-Finance/dca-v2-core/actions/workflows/tests.yml)
-[![npm version](https://img.shields.io/npm/v/@mean-finance/dca-v2-core/latest.svg)](https://www.npmjs.com/package/@mean-finance/dca-v2-core/v/latest)
+[![Lint](https://github.com/Mean-Finance/dca-v2-core-beta/actions/workflows/lint.yml/badge.svg)](https://github.com/Mean-Finance/dca-v2-core-beta/actions/workflows/lint.yml)
+[![Tests (unit, integration, e2e)](https://github.com/Mean-Finance/dca-v2-core-beta/actions/workflows/tests.yml/badge.svg)](https://github.com/Mean-Finance/dca-v2-core-beta/actions/workflows/tests.yml)
+[![npm version](https://img.shields.io/npm/v/@mean-finance/dca-v2-core-beta/latest.svg)](https://www.npmjs.com/package/@mean-finance/dca-v2-core-beta/v/latest)
 
 This repository contains the core smart contracts for the DCA V2 Protocol.
 

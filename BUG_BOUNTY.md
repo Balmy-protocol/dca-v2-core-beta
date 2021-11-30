@@ -2,7 +2,7 @@
 
 ## Overview
 
-Starting on December 01, 2021, the [dca-v2](https://github.com/mean-finance/dca-v2-core) repository is subject to the DCA V2 Bug Bounty (the “Program”) to incentivize responsible bug disclosure.
+Starting on December 01, 2021, the [dca-v2-core-beta](https://github.com/mean-finance/dca-v2-core-beta) repository is subject to the DCA V2 Bug Bounty (the “Program”) to incentivize responsible bug disclosure.
 
 We are limiting the scope of the Program to critical and high severity bugs, and are offering a reward of up to $5000. Happy hunting!
 
