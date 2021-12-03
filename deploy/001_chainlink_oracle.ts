@@ -8,8 +8,10 @@ const deployFunction: DeployFunction = async function (hre: HardhatRuntimeEnviro
 
   const FEED_REGISTRY_MAINNET_ADDRESS = '0x47Fb2585D2C56Fe188D0E6ec628a38b74fCeeeDf';
   const FEED_REGISTRY_KOVAN_ADDRESS = '0xAa7F6f7f507457a1EE157fE97F6c7DB2BEec5cD0';
+  const FEED_REGISTRY_OPTIMISM_KOVAN_ADDRESS = '0x2dfb2c5c013826a0728440d8036305b254ad9cce';
   const WETH_MAINNET_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
   const WETH_KOVAN_ADDRESS = '0xd0a1e359811322d97991e03f863a0c30c2cf029c';
+  const WETH_OPTIMISM_KOVAN_ADDRESS = '0x4200000000000000000000000000000000000006';
 
   let registry: string;
   let weth: string;
@@ -25,6 +27,11 @@ const deployFunction: DeployFunction = async function (hre: HardhatRuntimeEnviro
     case 'kovan':
       registry = FEED_REGISTRY_KOVAN_ADDRESS;
       weth = WETH_KOVAN_ADDRESS;
+      maxDelay = BigNumber.from(2).pow(32).sub(1);
+      break;
+    case 'optimismkovan':
+      registry = FEED_REGISTRY_OPTIMISM_KOVAN_ADDRESS;
+      weth = WETH_OPTIMISM_KOVAN_ADDRESS;
       maxDelay = BigNumber.from(2).pow(32).sub(1);
       break;
     default:
