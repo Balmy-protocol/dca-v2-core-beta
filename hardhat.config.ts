@@ -64,6 +64,11 @@ const networks: NetworksUserConfig = process.env.TEST
         accounts: accounts('optimistickovan'),
         tags: ['staging'],
       },
+      optimism: {
+        url: 'https://mainnet.optimism.io',
+        accounts: accounts('optimism'),
+        tags: ['production'],
+      },
     };
 
 const config: HardhatUserConfig = {
